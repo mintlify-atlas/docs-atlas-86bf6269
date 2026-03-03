@@ -1,0 +1,137 @@
+{
+  "projectType": "saas",
+  "projectName": "G3Engine",
+  "projectDescription": "A browser-based game engine for creating 2D/3D games with visual scripting, Web3 integration, and social platform publishing.",
+  "theme": "palm",
+  "primaryColor": "#8b5cf6",
+  "lightColor": "#a78bfa",
+  "darkColor": "#6d28d9",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "platform-overview"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/3d-editor",
+              "features/2d-editor",
+              "features/visual-scripting",
+              "features/asset-library",
+              "features/scene-management"
+            ]
+          },
+          {
+            "group": "Web3 Integration",
+            "pages": [
+              "web3/overview",
+              "web3/wallet-connection",
+              "web3/pump-fun-tokens",
+              "web3/nft-minting",
+              "web3/token-gating",
+              "web3/game-economy"
+            ]
+          },
+          {
+            "group": "Publishing & Deployment",
+            "pages": [
+              "publishing/overview",
+              "publishing/twitter-player-cards",
+              "publishing/telegram-mini-apps",
+              "publishing/web-embeds"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/creating-first-game",
+              "guides/adding-interactions",
+              "guides/web3-game-tutorial",
+              "guides/keyboard-shortcuts",
+              "guides/best-practices"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Visual Scripting",
+        "groups": [
+          {
+            "group": "Node Reference",
+            "pages": [
+              "nodes/overview",
+              "nodes/events",
+              "nodes/actions",
+              "nodes/logic",
+              "nodes/math",
+              "nodes/web3"
+            ]
+          },
+          {
+            "group": "Examples",
+            "pages": [
+              "examples/player-movement",
+              "examples/token-rewards",
+              "examples/nft-gates",
+              "examples/game-loops"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Core APIs",
+            "pages": [
+              "api/scene-objects",
+              "api/transforms",
+              "api/materials",
+              "api/editor-store"
+            ]
+          },
+          {
+            "group": "Web3 APIs",
+            "pages": [
+              "api/web3-store",
+              "api/token-operations",
+              "api/nft-operations",
+              "api/wallet-integration"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Browser-based 3D/2D game editor with Three.js and React Three Fiber",
+    "Visual scripting system with blueprint-style nodes (events, actions, logic, math, Web3)",
+    "Solana Web3 integration with Pump.fun token trading and NFT minting",
+    "Token gating and in-game economy features",
+    "One-click publishing to Twitter Player Cards, Telegram Mini Apps, and web embeds",
+    "Scene serialization and export to JSON",
+    "Transform controls (translate, rotate, scale) with keyboard shortcuts",
+    "Multi-chain wallet support (Solana and EVM)"
+  ],
+  "publicApiSurface": [
+    "useEditorStore - Zustand store for scene management (addObject, removeObject, updateTransform, exportScene)",
+    "useWeb3Store - Zustand store for Web3 features (tokens, NFTs, economy, transactions)",
+    "SceneObject - Core 3D object type (box, sphere, cylinder, plane, cone, torus, lights, camera)",
+    "Visual Scripting Nodes - Event nodes (Begin Play, Tick, Key Press, Collision, Click)",
+    "Visual Scripting Nodes - Action nodes (Move To, Rotate, Spawn, Destroy, Play Sound, Set Visible)",
+    "Visual Scripting Nodes - Logic nodes (Branch, Sequence, Delay, For Loop)",
+    "Visual Scripting Nodes - Math nodes (Add, Multiply, Compare, Random)",
+    "Visual Scripting Nodes - Web3 nodes (Launch Token, Buy/Sell Token, Mint NFT, Token Gate, Check Balance, Airdrop, Send SOL, Reward Player)",
+    "Viewport component - 3D canvas with OrbitControls, TransformControls, Grid, lighting",
+    "NodeEditor component - React Flow based visual scripting interface",
+    "Web3Panel component - Token/NFT management, economy settings, wallet integration"
+  ]
+}
